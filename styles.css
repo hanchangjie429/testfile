@@ -1,0 +1,82 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.app {
+  max-width: 520px;
+  margin: 24px auto;
+  padding: 0 16px 24px;
+}
+
+h1 {
+  margin: 0 0 12px;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.hud p {
+  margin: 0;
+}
+
+button {
+  border: 1px solid #999;
+  background: #fff;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.status {
+  margin: 0 0 12px;
+  min-height: 1.2em;
+}
+
+.board {
+  --grid-size: 20;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), minmax(0, 1fr));
+  border: 1px solid #bbb;
+  background: #fff;
+  aspect-ratio: 1 / 1;
+}
+
+.cell {
+  border: 1px solid #f0f0f0;
+}
+
+.cell.snake {
+  background: #2f7d32;
+}
+
+.cell.head {
+  background: #1e5b22;
+}
+
+.cell.food {
+  background: #bf2e2e;
+}
+
+.controls {
+  margin-top: 12px;
+  display: grid;
+  gap: 6px;
+  justify-content: center;
+}
+
+.controls-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}

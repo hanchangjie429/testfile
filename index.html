@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Snake</h1>
+      <section class="hud">
+        <p>Score: <strong data-score>0</strong></p>
+        <button data-restart type="button">Restart</button>
+      </section>
+      <p class="status" data-status>Use Arrow keys or WASD to move.</p>
+      <section class="board" data-board aria-label="Snake game board"></section>
+      <section class="controls" aria-label="Touch controls">
+        <button type="button" data-direction="ArrowUp">↑</button>
+        <div class="controls-row">
+          <button type="button" data-direction="ArrowLeft">←</button>
+          <button type="button" data-direction="ArrowDown">↓</button>
+          <button type="button" data-direction="ArrowRight">→</button>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
